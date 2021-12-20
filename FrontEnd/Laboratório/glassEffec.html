@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+
+
+    <style>
+        body{
+            background: url("https://i.pinimg.com/originals/26/52/09/265209c31e61fc53bb9eae7ff1276cff.jpg");
+            background-repeat:no-repeat;
+            display: flex;
+            background-position:top;
+            justify-content: center ;
+            align-items: center;
+        }
+        .glass {
+            background: #ffffff05;
+            backdrop-filter: blur(24px);
+
+            width: 200px;
+            height: 200px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+
+            color: white;
+            text-align: center;
+            font-family: Ubuntu, sans-serif;
+            font-size: 20px;
+
+            border-radius: 20px;
+           
+            user-select: none;
+            cursor: pointer;
+
+            transition: 0.5s;
+            
+        }
+        .glass:hover {
+            box-shadow: inset 0 0 0.2em rgb(253, 253, 253), 0 0 0.5em rgb(255, 255, 255);
+            transform: scale(1.02);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="glass">
+        Efeito de Vidro
+    </div>
+
+    <div class="glass">
+        Efeito de Vidro
+    </div>
+    
+</body>
+</html>

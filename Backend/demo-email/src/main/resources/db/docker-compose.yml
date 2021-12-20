@@ -1,0 +1,10 @@
+version: '3'
+services:
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_USER=cristal_admin
+      - POSTGRES_PASSWORD=${CRISTAL_PASS}
+      - POSTGRES_DB=cristal_postgres
+    ports:
+      - "5433:5433"
