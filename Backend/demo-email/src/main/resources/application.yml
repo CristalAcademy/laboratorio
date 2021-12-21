@@ -1,8 +1,22 @@
+server:
+  port: 8080
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/demo_email
-    username: postgres
-    password: 123456
+    username: cristal_admin
+    password: 12345
   jpa:
     hibernate:
       ddl-auto: update
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: cristalacademysdg@gmail.com
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    password: ${EMAIL_PASS:12345}

@@ -5,6 +5,7 @@ services:
     environment:
       - POSTGRES_USER=cristal_admin
       - POSTGRES_PASSWORD=${CRISTAL_PASS}
+#      - POSTGRES_PASSWORD=12345
       - POSTGRES_DB=cristal_postgres
     ports:
-      - "5433:5433"
+      - "5432:5432"
