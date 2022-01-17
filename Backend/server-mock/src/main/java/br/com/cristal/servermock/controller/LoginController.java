@@ -22,7 +22,7 @@ public class LoginController {
                         .builder()
                         .id(UUID.randomUUID().toString())
                         .profile(Profile.CANDIDATO)
-                        .nome(request.getNome())
+                        .nome("Teste login")
                         .build()
         );
     }
